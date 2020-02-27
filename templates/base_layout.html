@@ -9,9 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-  <div class="wrapper">
-    {% block content %}
-    {% endblock %}
-  </div>
+    <h1>
+        <a href="{% url 'blog:list' %}">blog</a>
+    </h1>
+    <div class="wrapper">
+        {% block content %}
+        {% endblock %}
+     </div>
+     <p>pooooooo<p>
 </body>
 </html>
