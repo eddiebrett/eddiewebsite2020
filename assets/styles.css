@@ -1,3 +1,57 @@
 body{
     background:lightpink;
 }
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div.wrapper h1{
+    text-align: center;
+    margin:100px auto;
+    font-size: 2.4em;
+}
+
+.articles {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.article{
+    padding: 10px;
+    border: 1px solid lightblue;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.article h2{
+    font-size: 1.2em;
+}
+
+.article .author{
+    padding: 10px;
+    background: purple;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    color: pink;
+}
+
+.article-detail .article img{
+    max-width: 100%;
+}
+
+.article-detail .article h2 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+
+}
+
+.article-detail .article p {
+    text-align: center;
+   
+}
