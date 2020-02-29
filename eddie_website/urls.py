@@ -9,10 +9,10 @@ from django.conf import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^articles/', include('articles.urls')),
-    url(r'^$', views.homepage),
-    url(r'^contact/$', views.contactpage),
-    url(r'^games/$', views.gamespage),
-    url(r'^music/$', views.musicpage),
+    url(r'^$', views.homepage, name="homepage"),
+    url(r'^contact/$', views.contactpage, name="contactpage"),
+    url(r'^games/$', views.gamespage, name="gamespage"),
+    url(r'^music/$', views.musicpage, name="musicpage"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

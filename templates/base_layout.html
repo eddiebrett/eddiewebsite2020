@@ -1,21 +1,68 @@
 {% load static from staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Special+Elite" rel="stylesheet">
+
+	<!---------- favicon ----->
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>{{ page.name }}</title>
 </head>
+
 <body>
-    <h1>
-        <a href="{% url 'blog:list' %}">blog</a>
-    </h1>
-    <div class="wrapper">
-        {% block content %}
-        {% endblock %}
-     </div>
-     <p>pooooooo<p>
+	<!--------------------------------- Main logo top left corner 'mate' ----------------------->
+
+	<div class="row col-xs-12">
+		<img href="#"
+            />
+        </div>
+
+		<!------------------------------------- nav bar menu -------------------------------------------->
+
+		<nav class="nav nav-pills nav-justified">
+			<a class="nav-item nav-link" href="{% url 'homepage' %}">HOME</a>
+			<a class="nav-item nav-link" href="{% url 'blog:list' %}">BLOG</a>
+			<a class="nav-item nav-link" href="{% url 'musicpage' %}">MUSIC</a>
+			<a class="nav-item nav-link" href="{% url 'gamespage' %}">GAME</a>
+			<a class="nav-item nav-link" href="#">SHOP</a>
+			<a class="nav-item nav-link" href="{% url 'contactpage' %}">CONTACT</a>
+
+		</nav>
+
+
+
+		<h1>
+			<a href="">blog</a>
+		</h1>
+		<div class="wrapper">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<p>pooooooo<p>
 </body>
+
 </html>
