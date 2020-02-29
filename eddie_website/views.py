@@ -16,3 +16,6 @@ def musicpage(request):
 
 def gamespage(request):
     return render(request, "gamespage.html")
+
+def mental_game(request):
+    return render(request, "mental_game.html")

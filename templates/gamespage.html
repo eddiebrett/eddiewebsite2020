@@ -1,7 +1,29 @@
 {% extends 'base_layout.html' %}
+{% block meta_description %} Eddie Brett games to play {% endblock %}
+{% block title %}EDDIE GAMES{% endblock %}
 {% block content %}
-    <h1>Games</h1>
-    <p>Hey everybody this is a page</p>
+    <div class="container-fluid content game-page">
+
+        <h3 class="col-xs-6 col-lg-8 container">
+            <span class="highlighted-text">
+        Tests your memory with this flipping good card game. Click on box to begin -->   
+
+        </span>
+        </h3>
+
+
+
+        <div class="row">
+
+            <div class="col-xs-6 col-lg-4 game-logo">
+                <a href="{% url 'mental_game' %}" target="blank">
+                <img height="315" width="315" src="images/game/mate.jpg" alt="mate-logo">
+                 </a>
+            </div>
+
+        </div>
+
+    </div>
 {% endblock%}
 
    

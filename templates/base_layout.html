@@ -4,12 +4,14 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="description"
+		content="{% block meta_description %} Website for the poet and performer Eddie Brett {% endblock %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-		type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% block css %}{% static 'styles.css' %}{% endblock %}" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Special+Elite" rel="stylesheet">
 
 	<!---------- favicon ----->
@@ -30,7 +32,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<title>{{ page.name }}</title>
+	<title>{% block title %} Eddie Brett {% endblock %}</title>
 </head>
 
 <body>
@@ -43,7 +45,7 @@
 
 		<!------------------------------------- nav bar menu -------------------------------------------->
 
-		<nav class="nav nav-pills nav-justified">
+		<nav class="nav nav-pills nav-fill ">
 			<a class="nav-item nav-link" href="{% url 'homepage' %}">HOME</a>
 			<a class="nav-item nav-link" href="{% url 'blog:list' %}">BLOG</a>
 			<a class="nav-item nav-link" href="{% url 'musicpage' %}">MUSIC</a>
@@ -52,17 +54,59 @@
 			<a class="nav-item nav-link" href="{% url 'contactpage' %}">CONTACT</a>
 
 		</nav>
-
-
-
-		<h1>
-			<a href="">blog</a>
-		</h1>
+		<!-----------------------------------------content----------------------------------------->
 		<div class="wrapper">
 			{% block content %}
 			{% endblock %}
 		</div>
-		<p>pooooooo<p>
+
+		<!-----------------------------------------footer----------------------------------------->
+
+		<!-- Footer -->
+		<footer class="page-footer font-small special-color-dark pt-4">
+
+			<!-- Footer Elements -->
+			<div class="container">
+
+				<!-- Social buttons -->
+				<ul class="list-unstyled list-inline text-center">
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.facebook.com/eddiebrettmate/"
+							class="btn-floating btn-fb mx-1">
+							<i class="fa fa-facebook-f"> </i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a class="btn-floating btn-tw mx-1" target="_blank" href="https://twitter.com/eddiebrett">
+							<i class="fa fa-twitter"> </i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a class="btn-floating btn-gplus mx-1" target="_blank"
+							href="https://www.instagram.com/eddiebrettmate/">
+							<i class="fa fa-instagram"> </i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a class="btn-floating btn-li mx-1" target="_blank"
+							href="https://www.youtube.com/channel/UCNntehOHfA3jNS-r1-WLKaQ?view_as=subscriber">
+							<i class="fa fa-youtube"> </i>
+						</a>
+					</li>
+				</ul>
+				<!-- Social buttons -->
+
+			</div>
+			<!-- Footer Elements -->
+
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2020 Copyright:
+				<a href="https://open.spotify.com/artist/2227E5NVXSCxvx20DdDX4U">COCKNEY PIRATE RECORDS</a>
+			</div>
+			<!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
 </body>
 
 </html>

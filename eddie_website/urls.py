@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^$', views.homepage, name="homepage"),
     url(r'^contact/$', views.contactpage, name="contactpage"),
     url(r'^games/$', views.gamespage, name="gamespage"),
+    url(r'^mental_game/$', views.mental_game, name="mental_game"),
     url(r'^music/$', views.musicpage, name="musicpage"),
 ]
 

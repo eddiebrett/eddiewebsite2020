@@ -1,0 +1,188 @@
+{% extends 'base_layout.html' %}
+{% block css %}{% endblock %}
+{% block meta_description %} Eddie Brett memory card game {% endblock %}
+{% block title %}MENTAL MATE{% endblock %}
+{% block content %}
+  <!------------------------------page title/logo-------------------------------->
+  <h1 class="page-title">mental mate</h1>
+
+
+  <!-----------------------game-text-intervals----------------------------------->
+  <div class="overlay-text visible">
+    click to begin.
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    unlucky mate!
+    <span class="overlay-text-small">click to restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    oioi!
+    <span class="overlay-text-small">click to restart</span>
+  </div>
+
+
+  <!--------------------------interactive game counts---------------------------->
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        time <span class="font-effect-fire-animation" id="time-remaining">69</span>
+      </div>
+      <div class="game-info">
+        flips <span class="font-effect-fire-animation" id="flips">0</span>
+      </div>
+    </div>
+
+    <!-----------------------------------game-cards--------------------------------->
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/he-does-what-he-wants.jpg" alt="he-does-what-he-wants">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/he-does-what-he-wants.jpg" alt="he-does-what-he-wants">
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/myself.jpg" alt="wordart">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/myself.jpg" alt="wordart">
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/first-things-first.jpg" alt="first-things-first">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/first-things-first.jpg" alt="first-things-first">
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/honest.jpg" alt="honest">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/honest.jpg" alt="honest">
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/parlay.jpg" alt="parlay">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/parlay.jpg" alt="parlay">
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/pirate.jpg" alt="pirate">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/pirate.jpg" alt="pirate">
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/this-and-that.jpg" alt="this-and-that">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/this-and-that.jpg" alt="this-and-that">
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/this-and-that-and-that.jpg" alt="this-and-that-and-that">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="images/game/mate.jpg" alt="mate-card">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/game/this-and-that-and-that.jpg" alt="this-and-that-and-that">
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/me'ntal_game.js">'</script>
+{% endblock %}
