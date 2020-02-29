@@ -44,7 +44,7 @@
         </div>
 
 		<!------------------------------------- nav bar menu -------------------------------------------->
-
+		{% block nav %}
 		<nav class="nav nav-pills nav-fill ">
 			<a class="nav-item nav-link" href="{% url 'homepage' %}">HOME</a>
 			<a class="nav-item nav-link" href="{% url 'blog:list' %}">BLOG</a>
@@ -54,15 +54,21 @@
 			<a class="nav-item nav-link" href="{% url 'contactpage' %}">CONTACT</a>
 
 		</nav>
+		{% endblock %}
 		<!-----------------------------------------content----------------------------------------->
 		<div class="wrapper">
 			{% block content %}
 			{% endblock %}
 		</div>
+        
+			{% block contentnonwrap %}
+			{% endblock %}
+		
 
 		<!-----------------------------------------footer----------------------------------------->
 
 		<!-- Footer -->
+		{% block footer %}
 		<footer class="page-footer font-small special-color-dark pt-4">
 
 			<!-- Footer Elements -->
@@ -106,6 +112,7 @@
 			<!-- Copyright -->
 
 		</footer>
+		{% endblock %}
 		<!-- Footer -->
 </body>
 
