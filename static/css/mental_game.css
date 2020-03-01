@@ -3,7 +3,7 @@
 /*---------------------generic rules/page formats-----------------------------*/
 
 * {
-  cursor: url("../images/pigeoncurs.png"), auto;
+  cursor: url("../media/images/pigeoncurs.png"), auto;
   margin: 0;
   box-sizing: border-box;
 

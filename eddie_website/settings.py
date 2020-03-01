@@ -172,9 +172,8 @@ STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "assets"),
+    os.path.join(BASE_DIR, "static"),
 )
 
 

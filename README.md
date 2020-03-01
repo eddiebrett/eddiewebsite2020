@@ -40,32 +40,28 @@ desktop:
 
 ## Features
 
-The home page is the first page that visitor will see and so i have place a recognisable picture used as the artwork for his first release. I have tried to make the text included thorough and informative whilst remaining entertaining and necessary. I was cautious to not waffle on, repeat anything and become boring. Anyone wanting to know who mate is will find out here.
+The home page is the first page that visitor will see and so i have placed a striking picture across the whole of the page to gice the user a true understanding of who Eddie Brett is imediately. 
 
-I wanted the music page to feel like a collage. A varied mixture of the different things that Eddie has worked on. This page can easily grow and adapt as more work becomes available. Users wanting to see material are presented with various music and video options.
+I wanted the music page to feel like a collage. A varied mixture of the different things that Eddie has worked on. This page can easily grow and adapt as more work becomes available. Users wanting to see material are presented with various music and video options. I looked at carousel options but i wanted the user to get an instant sense of the breadth of the work rather than have to scrool through and work for it.
 
-The merch page is more-or-less a blank page at the moment. It exists to let people know that there will be merchandise avaiable soon so to keep checking.
+The shop page can easily be added to or change from the django admin page and superaccounts can be set up to access this. I refrained from including front end login pages for admin as a security caution. They aren't ever going to be more than 10 things for sale so i was quite happy to let this space be spread out and celebrate the things for sale. The language used reflect the brand of Eddie.
 
-The collab page is very matter of fact. Not busy with infomation just a very clear box and oportunity for users to connect with the project if they want. Users wanting to contact mate can do so here and i have attached the managers email to the email-box.
+The contact page is very matter of fact. Not busy with infomation just a very clear box and oportunity for users to connect with the project if they want. I used the mailto: function to start a fresh page so that the user felt a personal connection with the message rather than just be subjected to another text box on a website that might go nowhere. Letting the user see an email feels personal.
 
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
+- The mental game is just a bit of additional fun to give users a reason to return to site, whilst researching other artists i couldn't see any sites with this can of quirk and so i thought it would be a cool thing to add.
 ### Features Left to Implement
 - Once the project is in full swing and mate is touring we will also create a new page called 'touring' a gig type poster designed in photoshop to relay all of the information regarding gig dates and upcoming shows.
 
 ## Technologies Used
 
-I've used the bootstrap framework https://getbootstrap.com/ because of its ease of use and clear layouts. I have used google fonts https://fonts.google.com/ to give my site some interesting asthetically pleasing fonts that tie in well with the brand. I have embedded youtube iFrames in my site because they are a fantastic video player and the format is known to the user degraphic. I have made my site with HTML5 and CSS. I have used a custom domaine name purchased from Go daddy. www.godaddy.com
+I've used the bootstrap framework https://getbootstrap.com/ because of its ease of use and clear layouts. I have used google fonts https://fonts.google.com/ to give my site some interesting asthetically pleasing fonts that tie in well with the brand. I have embedded youtube iFrames in my site because they are a fantastic video player and the format is known to the user degraphic. I have made my site with HTML5 and CSS. I have used a custom domaine name purchased from Go daddy. www.godaddy.com. I have used Javascript https://www.javascript.com/ to my an automatic slug writer to uniform the urls and blog names, and for making a card game.
 
+- https://www.djangoproject.com/ ive used the django framework to make the website dynamics and easier to maintain.
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
+- I've used stripe https://stripe.com/gb?utm_campaign=paid_brand-UK_en_Search_Brand_Stripe-2032860449&utm_medium=cpc&utm_source=google&ad_content=355351450310&utm_term=stripe%20payments&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=Cj0KCQiA1-3yBRCmARIsAN7B4H3aS_G15nYFWEdGylS_fxa8PD5oqnMCz1ih70RQomw1OSRsHZZJ4ywaAsjgEALw_wcB to process the payments in my shop application.
 
 
 ## Testing
@@ -77,17 +73,10 @@ Using mobile first design was a great way to ensure that the site was asthetical
 I sent test emails to the email address provided in the contact page to ensure that that feature was working.
 
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-
 
 ## Deployment
 
-When i have made a change to my website i deploy the update to GitHub. This website is simple in nature and so only requires one branch called the master and everything is uploaded there. When i have made a change that i want to upload i type in the terminal: 'git init' Then i add the file i have updated for exaple: 'git add readme.md' I then add a note of what has been updated and commit the files staged in the local repository: 'git commit -m "updated readme file to be more specific and include UX drawings"' and then finally: 'git push -u origin master' This pushes the changes in the local repository to github.
+When i have made a change to my website i commit the update and push it to GitHub. When i have made a change that i want to upload i type in the terminal: 'git init' Then i add the file i have updated for exaple: 'git add readme.md' I then add a note of what has been updated and commit the files staged in the local repository: 'git commit -m "updated readme file to be more specific and include UX drawings"' and then finally: 'git push -u origin master' This pushes the changes in the local repository to github. I am hosting my site on Heroku which works with databases; https://dashboard.heroku.com/ . Ive purchased the domaine www.eddiebrett.com and so that is where the site will be pointed to. I am storing all of my static files in an s3 bucket using amazon AWS cloud facilities https://aws.amazon.com/ .
 
 
 ## Credits
@@ -101,5 +90,8 @@ When i have made a change to my website i deploy the update to GitHub. This webs
 ### Acknowledgements
 
 - My design reference points were lifestyle fashions brands such as; adidas and supreme. Photographers suchs as AZCaptures. I also looked at poets, musicians and rappers such as Ratboy, George the poet, Rizzle Kickz, Tyler the creator/ odd future, George Ezra, Mac Demarco and Al the Native to give me a sense of what was happening, what works, what doesn't and how to avoid being a copycat.
+- I followed a youtube series by web ninja to build the blog: https://www.youtube.com/watch?v=n-FTlQ7Djqc&list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc
+
+- I used a youtube tutorial to build the card game: https://www.youtube.com/watch?v=28VfzEiJgy4&t=4s
 
 The url is : https://eddiebrett.github.io/eddiewebsite2020/
