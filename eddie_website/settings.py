@@ -13,8 +13,6 @@ import os
 # import env
 if os.path.exists("env.py"):
     import env
-    print("Got ENV")
-    print(os.environ.get("AWS_ACCESS_KEY_ID"))
 import dj_database_url
 
 
@@ -82,6 +80,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
+                'django.template.context_processors.static',
                 'cart.contexts.cart_contents',
             ],
         },
@@ -145,16 +144,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-
-MEDIA_URL = "/media/"
-MEDIA_ROOT = (
-    os.path.join(BASE_DIR, "media")
-)
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
-
 AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
     'CacheControl': 'max-age=94608000'
@@ -164,28 +153,20 @@ AWS_STORAGE_BUCKET_NAME = 'eddie-ecommerce2'
 AWS_S3_REGION_NAME = 'eu-west-1'
 AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
-
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-
-
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-)
+]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 MEDIAFILES_LOCATION = 'media'
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-
-MEDIA_URL = "/media/"
-# MEDIA_ROOT = (
-#  os.path.join(BASE_DIR, "media")
-# )
-
-
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
