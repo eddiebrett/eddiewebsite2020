@@ -6,21 +6,21 @@ from accounts.forms import UserLoginForm, UserRegistrationForm
 
 
 def index(request):
-    """Return the index.html file"""
-    return render(request,  'index.html')
+    """Return the shop file"""
+    return render(request, 'all_products')
 
 @login_required
 def logout(request):
     """Log the user out"""
     auth.logout(request)
     messages.success(request, "You have successfully been logged out")
-    return redirect(reverse('index'))
+    return redirect(reverse('all_products'))
 
 
 def login(request):
     """Return a login page"""
     if request.user.is_authenticated:
-        return redirect(reverse('index'))
+        return redirect(reverse('all_products'))
     if request.method == "POST":
         login_form = UserLoginForm(request.POST)
 
@@ -31,7 +31,7 @@ def login(request):
 
             if user:
                 auth.login(user=user, request=request)
-                return redirect(reverse('index'))
+                return redirect(reverse('all_products'))
             else:
                 login_form.add_error(None, "Your username or password is incorrect")
     else:
@@ -42,7 +42,7 @@ def login(request):
 def registration(request):
     """Render the registration page"""
     if request.user.is_authenticated:
-        return redirect(reverse('index'))
+        return redirect(reverse('all_products'))
 
     if request.method == "POST":
         registration_form = UserRegistrationForm(request.POST)

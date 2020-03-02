@@ -41,21 +41,46 @@
 </head>
 
 <body>
-	<!--------------------------------- Main logo top left corner 'mate' ----------------------->
+	<!--------------------------------- Main logo top left corner 'eddie brett' 
 
-	<div class="row col-xs-12">
-		<img href="#"
-            />
-        </div>
+    ----------------------->
 
-		<!------------------------------------- nav bar menu -------------------------------------------->
-		{% block nav %}
+
+
+	<!------------------------------------- nav bar menu -------------------------------------------->
+	{% block nav %}
+	<div class="row">
+		<div class="col">
+			<img width="200em" src="{% static 'media/images/eddie-brett-logo-blue-green.png' %}">
+	    </div>
+		<div class="col">
+			<a href="{% url 'view_cart' %}">
+				<i class="fa fa-shipping-cart"></i> Cart
+				{% if product_count > 0 %}
+				<label class="badge badge-warning">{{ product_count }}</label>
+				{% endif %}
+			</a>
+
+
+
+			{% if messages %}
+			<div class="alert alert-success">
+				<div class="messages">
+					{% for message in messages %}
+					{{ message }}
+					{% endfor %}
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+
 		<nav class="nav nav-pills nav-fill ">
 			<a class="nav-item nav-link" href="{% url 'homepage' %}">HOME</a>
 			<a class="nav-item nav-link" href="{% url 'blog:list' %}">BLOG</a>
 			<a class="nav-item nav-link" href="{% url 'musicpage' %}">MUSIC</a>
 			<a class="nav-item nav-link" href="{% url 'gamespage' %}">GAME</a>
-			<a class="nav-item nav-link" href="(% url 'products' %}">SHOP</a>
+			<a class="nav-item nav-link" href="{% url 'all_products' %}">SHOP</a>
 			<a class="nav-item nav-link" href="{% url 'contactpage' %}">CONTACT</a>
 
 		</nav>

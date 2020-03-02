@@ -9,4 +9,8 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+def all_products(request):
+    products = Product.objects.all() # returns all the products in the db.
+    return render(request, "products.html", {"products":products})
       

@@ -53,6 +53,7 @@ The contact page is very matter of fact. Not busy with infomation just a very cl
 - The mental game is just a bit of additional fun to give users a reason to return to site, whilst researching other artists i couldn't see any sites with this can of quirk and so i thought it would be a cool thing to add.
 ### Features Left to Implement
 - Once the project is in full swing and mate is touring we will also create a new page called 'touring' a gig type poster designed in photoshop to relay all of the information regarding gig dates and upcoming shows.
+- the youtube videos take quite a while to load so i want to add some spinners to let the user know something is coming.
 
 ## Technologies Used
 
@@ -93,5 +94,6 @@ When i have made a change to my website i commit the update and push it to GitHu
 - I followed a youtube series by web ninja to build the blog: https://www.youtube.com/watch?v=n-FTlQ7Djqc&list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc
 
 - I used a youtube tutorial to build the card game: https://www.youtube.com/watch?v=28VfzEiJgy4&t=4s
+- page loader video https://www.youtube.com/watch?v=xuA83OYTE7I
 
 The url is : https://eddiebrett.github.io/eddiewebsite2020/

@@ -13,6 +13,10 @@ from products.views import all_products
 from django.views.static import serve
 from .settings import MEDIA_ROOT
 
+
+# from django.views import static  (this is in the code-inst ecommerce)
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^articles/', include('articles.urls')),
@@ -22,11 +26,16 @@ urlpatterns = [
     url(r'^mental_game/$', views.mental_game, name="mental_game"),
     url(r'^music/$', views.musicpage, name="musicpage"),
     url(r'^accounts/', include(urls_accounts)),
-    url(r'^products/', include(urls_products)),
+    # url(r'^products/', include(urls_products)), (this was a correction delete)
+    url(r'^all_products/$', all_products, name="all_products"),
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT})
+    # url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}) 
 ]
+  
+    # url(r'^$', all_products, name='index'),
 
 # urlpatterns += staticfiles_urlpatterns()
 # urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
