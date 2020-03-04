@@ -6,6 +6,7 @@
     <div class="articles">
         {% for article in articles %}
             <div class="article">
+                <img width="100%" src="{{ article.thumb.url }}"/>
                 <h2><a href="{% url 'blog:post' slug=article.slug %}">{{article.title}}</a></h2>
                 <p>{{article.snippet}}</p>
                 <p>{{article.date}}</p>
@@ -14,6 +15,6 @@
         {% endfor %}
     </div>
 
-    <p>This is where the articles go....</p>  
+     
 {% endblock%}
     

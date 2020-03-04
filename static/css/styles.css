@@ -1,5 +1,4 @@
 
-
 .wrapper{
     max-width: 960px;
     margin: 0 auto;
@@ -69,14 +68,15 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: black;
+    padding-bottom: 200px;
 }
 
 
 footer {
     
     background-color: #95d9ea;
-    /* position: fixed;
-    bottom: 0; */
+    position: fixed;
+    bottom: 0;
     width: 100%;
 
 }
