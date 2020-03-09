@@ -57,9 +57,77 @@
 
     ----------------------->
 
+<!--Navbar-->
+<!--Navbar-->
+<nav class="navbar small-nav">
+
+  
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+    aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon3"><span></span><span></span><span></span></div>
+  </button>
+
+<!-- Navbar brand -->
+  <a href="{% url 'homepage' %}"><img width="200em" src="{% static 'media/images/logo-eddie-brett.png' %}"></a>
+
+<!--Trolley -->
+<div>
+			<a href="{% url 'view_cart' %}">
+				<i class="fas fa-shopping-cart"></i>
+				{% if product_count > 0 %}
+				<label class="badge badge-warning">{{ product_count }}</label>
+				{% endif %}
+			</a>
+
+			{% if messages %}
+			<div class="alert alert-success">
+				<div class="messages">
+					{% for message in messages %}
+					{{ message }}
+					{% endfor %}
+				</div>
+			</div>
+			{% endif %}
+		</div>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent22">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'homepage' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'blog:list' %}">BLOG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'musicpage' %}">MUSIC</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'gamespage' %}">GAME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'all_products' %}">SHOP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contactpage' %}">CONTACT</a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+<!--/.Navbar-->
 
 	<!------------------------------------- nav bar menu -------------------------------------------->
 	{% block nav %}
+    <div class="big-nav">
 	<div class="row base-logo">
 		<div class="col">
 			<img width="200em" src="{% static 'media/images/logo-eddie-brett.png' %}">
@@ -71,8 +139,6 @@
 				<label class="badge badge-warning">{{ product_count }}</label>
 				{% endif %}
 			</a>
-
-
 
 			{% if messages %}
 			<div class="alert alert-success">
@@ -95,6 +161,7 @@
 			<a class="nav-item nav-link" href="{% url 'contactpage' %}">CONTACT</a>
 
 		</nav>
+    </div>
 		{% endblock %}
 		<!-----------------------------------------content----------------------------------------->
 		<div class="wrapper">
@@ -157,6 +224,24 @@
 
 
 		<!-- Javascript -->
+
+<script type="text/javascript">
+        $(document).ready(function () {
+
+  $('.first-button').on('click', function () {
+
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click', function () {
+
+    $('.animated-icon3').toggleClass('open');
+  });
+});
+</script>
         
 </body>
 
