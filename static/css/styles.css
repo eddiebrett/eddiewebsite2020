@@ -1,7 +1,35 @@
+/*-------------------------------------- navbar --------------*/
+.nav-fill .nav-item {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.trolley{
+    text-align: right;
+    margin-right: 3em;
+    margin-top: 2em;
+}
+
+.base-logo{
+    margin-left: 2em;
+    margin-top: 0.5em;
+}
+/*--------------------------------------- navbar --------------*/
+/*-------------------------------------- footer --------------*/
+
+.fab{
+    color: white;
+    font-size: initial;
+}
+/*--------------------------------------- footer --------------*/
 
 .wrapper{
     max-width: 960px;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 3em;
 }
 
 div.wrapper h1{
@@ -50,9 +78,18 @@ div.wrapper h1{
 
 .article-detail .article p {
     text-align: center;
+    
    
 }
 
+.product{
+    background-position: center center;
+    background-size: cover;
+}
+
+a{
+color: black;
+}
 /* older website css  */
 @import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
 
@@ -74,7 +111,7 @@ body {
 
 footer {
     
-    background-color: #95d9ea;
+    background-color: #34497A;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -120,4 +157,79 @@ footer {
     100%{
         transform: rotate(360deg);
     }
+}
+
+.pb-3, .py-3 {
+    padding-bottom: 0.5rem!important;
+}
+
+.pt-3, .py-3 {
+    padding-top: 0rem!important;
+}
+
+.pt-4, .py-4 {
+    padding-top: 1rem!important;
+
+}
+
+.home-img {
+ background-image: url('media/images/eddie_brett_love.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+
+
+/*--------------------contact page ---------------------------*/
+
+.contact-info{
+     width: auto;
+	height: 50%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.center-form {
+    text-align: center;
+    font-size:1.5em;
+    background-color: #77d3ea;
+
+}
+
+input[type="text"] {
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.btn {
+    background-color: #d3d3d3;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    border: 1px solid #3d3d3d;
+
+
+}
+
+.btn:hover {
+    background-color: #909090;
+}
+
+form{
+   margin-bottom: -3.6em;
+}
+
+
+
+.fill {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url("{% static 'media/images/eddie_brett_love.jpg' %}");
 }

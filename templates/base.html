@@ -60,13 +60,13 @@
 
 	<!------------------------------------- nav bar menu -------------------------------------------->
 	{% block nav %}
-	<div class="row">
+	<div class="row base-logo">
 		<div class="col">
-			<img width="200em" src="{% static 'media/images/eddie-brett-logo-blue-green.png' %}">
+			<img width="200em" src="{% static 'media/images/logo-eddie-brett.png' %}">
 	    </div>
-		<div class="col">
+		<div class="col trolley">
 			<a href="{% url 'view_cart' %}">
-				<i class="fas fa-shopping-cart"></i> Cart
+				<i class="fas fa-shopping-cart"></i> Trolley
 				{% if product_count > 0 %}
 				<label class="badge badge-warning">{{ product_count }}</label>
 				{% endif %}
