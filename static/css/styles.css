@@ -1,3 +1,24 @@
+/* older website css  */
+@import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
+
+/*-------------------- generic -------------------------------*/
+
+* {
+    cursor: url("../media/images/pigeoncurs.png"), auto;
+}
+
+body {
+    /* background-image: url("../images/background.jpg");
+    background-repeat: repeat; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: black;
+    padding-bottom: 200px;
+}
+
+.hover:hover {
+    filter: invert(100%);
+}
 /*-------------------------------------- navbar --------------*/
 .nav-fill .nav-item {
     -ms-flex: 1 1 auto;
@@ -90,23 +111,6 @@ div.wrapper h1{
 a{
 color: black;
 }
-/* older website css  */
-@import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
-
-/*-------------------- generic -------------------------------*/
-
-* {
-    cursor: url("../media/images/pigeoncurs.png"), auto;
-}
-
-body {
-    /* background-image: url("../images/background.jpg");
-    background-repeat: repeat; */
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: black;
-    padding-bottom: 200px;
-}
 
 
 footer {
@@ -176,13 +180,6 @@ footer {
 
 }
 
-.home-img {
- background-image: url('media/images/eddie_brett_love.jpg');
- background-size: cover;
- background-repeat: no-repeat;
-}
-
-
 
 /*--------------------contact page ---------------------------*/
 
@@ -200,7 +197,7 @@ footer {
 .center-form {
     text-align: center;
     font-size:1.5em;
-    background-color: #77d3ea;
+   
 
 }
 
@@ -420,6 +417,49 @@ left: 8px;
     padding: 0;
 }
 
+
+/*--blog---*/
+.article .author {
+    padding: 10px;
+    background: #000000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    color: #f8d2e1;
+}
+.article {
+    padding: 10px;
+    border: 3px solid black;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+
+
+/*---- shop ---*/
+.btn {
+    background-color: #f8d2e1;
+    margin-top: 0;
+    margin-bottom: 90px;
+    border: 2px solid #3d3d3d;
+}
+.btn-success {
+    color: #000000;
+}
+
+
+
+/*----- formn -----*/
+input[type="text"] {
+   border: 3px solid black;
+}
+
+textarea{ 
+    border: 3px solid black;
+}
+
+
 /* If the screen size is 600px wide or less, hide the element */
 @media only screen and (max-width: 600px) {
   .big-nav {
@@ -440,10 +480,20 @@ left: 8px;
 /* If the screen size is 601px wide or more, hide the element */
 @media only screen and (min-width: 601px) {
   .home-img {
-    width: 50%;
+    width: 45%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   
   }
+}
+
+.list-inline:hover {
+     color: yellow;
+
+}
+
+a:hover{
+    filter: invert(100%);
+    text-decoration: none;
 }
