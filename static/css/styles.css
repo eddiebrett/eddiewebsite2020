@@ -1,11 +1,18 @@
 /* older website css  */
 @import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
 
+
 /*-------------------- generic -------------------------------*/
 
 * {
     cursor: url("../media/images/pigeoncurs.png"), auto;
 }
+
+img{
+    vertical-align: unset; 
+    /* overides css and allows a border between images */
+}
+
 
 body {
     /* background-image: url("../images/background.jpg");
@@ -460,35 +467,29 @@ textarea{
 }
 
 
-/* If the screen size is 600px wide or less, hide the element */
+/* If the screen size is 600px wide or less,  MOBILE */
 @media only screen and (max-width: 600px) {
   .big-nav {
     display: none;
   }
-  
+  .videohide{
+    display: none;
+  }
+ 
 }
 
 
-/* If the screen size is 601px wide or more, hide the element */
+/* If the screen size is 601px wide or more, DESKTOP*/
 @media only screen and (min-width: 601px) {
   .small-nav {
     display: none;
   }
-}
-
-
-/* If the screen size is 601px wide or more, hide the element */
-@media only screen and (min-width: 601px) {
-  .home-img {
-    width: 45%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   
-  }
+  
 }
 
-.list-inline:hover {
+
+.fab:hover {
      color: yellow;
 
 }
