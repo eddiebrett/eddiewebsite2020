@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block meta_description %} Eddie Brett games to play {% endblock %}
 {% block title %}EDDIE GAMES{% endblock %}
 {% block content %}
         
             <div class="big-nav">
                 <a href="{% url 'mental_game' %}" target="blank">
-                <img width="100%" src="/static/media/images/game/game-page.png" alt="quizzy quizzy logo">
+                <img width="100%" src="{% static 'media/images/game/game-page.png' %}" alt="click to play quizzy quizzy">
                  </a>
             </div>
              <div class="small-nav">
                 <a href="{% url 'mental_game' %}" target="blank">
-                <img width="100%" src="/static/media/images/game/game-mobile.png" alt="quizzy quizzy logo">
+                <img width="100%" src="{% static 'media/images/game/game-mobile.png' %}" alt="click to play quizzy quizzy">
                  </a>
             </div>
 
