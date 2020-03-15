@@ -25,7 +25,7 @@ mobile:
 ![Image description](/workspace/eddiewebsite2020/static/media/images/readme_pics/iPhone XR-XS Max-11 – 9.png)
 
 desktop:
-![Image description](/workspace/eddiewebsite2020/static/media/images/readme_pics/wireframe1.png)
+![Image description](/static/media/images/readme_pics/wireframe1.png)
 ![Image description](/workspace/eddiewebsite2020/static/media/images/readme_pics/Web 1920 – 1.png)
 ![Image description](/workspace/eddiewebsite2020/static/media/images/readme_pics/Web 1920 – 2.png)
 ![Image description](/workspace/eddiewebsite2020/static/media/images/readme_pics/Web 1920 – 3.png)
