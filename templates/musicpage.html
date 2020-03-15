@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block meta_description %} This is a selection of songs and videos Eddie Brett has released.{% endblock %}
 {% block title %}EDDIE MUSIC{% endblock %}
 {% block content %}
 
 <div class="loader">
-<img src="static/media/cockney-pirate-skull.png" alt="loading.....">
+<img src="{% static 'media/cockney-pirate-skull.png' %}" alt="loading.....">
 </div>
 
 <div class="container">
@@ -16,24 +17,24 @@
                  </a></div>
 	<div class="col-6 col-md-2"><a href="https://open.spotify.com/album/40vDgv7tpm3yzqxJAfzxAN?si=IABU01qJTG-dKsC04av0yA"
 			target="blank">
-			<img width="100%" src="static/media/images/game/he-does-what-he-wants.jpg" alt="HeDoesWhatHeWants-album-cover">
+			<img width="100%" src="{% static 'media/images/game/he-does-what-he-wants.jpg' %}"  alt="HeDoesWhatHeWants-album-cover">
                 </a></div>
 	<div class="col-6 col-md-2"><a href="https://open.spotify.com/album/4V88ivH6YwYTe1w6q8wKvd?si=uDIBxPA7SJuwe3QFYB2hmA"
 			target="blank">
-			<img  width="100%" src="static/media/images/game/this-and-that.jpg" alt="This-And-That-album-cover">
+			<img  width="100%" src="{% static 'media/images/game/this-and-that.jpg' %}" alt="This-And-That-album-cover">
             </a></div>
 	<div class="col-6 col-md-2"><a href="https://open.spotify.com/album/7ytgV7ClfdXbbvDhF8W9mJ?si=1U9IUXQaQDiVKUyhy6vGqg"
 			target="blank">
-			<img width="100%" src="static/media/images/game/honest.jpg" alt="honest-album-cover">
+			<img width="100%" src="{% static 'media/images/game/honest.jpg' %}" alt="honest-album-cover">
                 </a></div>
 
 	<div class="col-6 col-md-2"><a href="https://open.spotify.com/track/3vOtCEpVvg349pNdO1WAaS"
 			target="blank">
-			<img width="100%" src="static/media/images/game/life.jpg" alt="life-album-cover">
+			<img width="100%" src="{% static 'media/images/game/life.jpg' %}" alt="life-album-cover">
                  </a></div>
 	<div class="col-6 col-md-2"><a href="https://open.spotify.com/track/20Z3xa5KltWHyJnF5rduH1"
 			target="blank">
-			<img width="100%" src="static/media/images/game/myself.jpg" alt="myself-album-cover">
+			<img width="100%" src="{% static 'media/images/game/myself.jpg' %}" alt="myself-album-cover">
                 </a></div>
 	
 </div>
