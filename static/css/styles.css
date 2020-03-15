@@ -58,8 +58,6 @@ body {
     max-width: 960px;
     margin: auto;
     margin-top: 3em;
-    margin-left: 2em;
-    margin-right: 2em;
 }
 
 div.wrapper h1{
@@ -477,6 +475,13 @@ textarea{
   .videohide{
     display: none;
   }
+  .wrapper{
+    max-width: 960px;
+    margin: auto;
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
  
 }
 

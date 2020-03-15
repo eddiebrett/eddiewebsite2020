@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', "Env value not loaded")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['eddie-ecommerce2.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://eddie-ecommerce2.herokuapp.com/', 'eddie-ecommerce2.herokuapp.com', 'localhost']
 
 
 # Application definition
