@@ -14,28 +14,28 @@ Users will want to get a general sense of what Eddie Brett is about and so we wi
 Please find my wireframes for the poject, alternatively located in /media/images/readme_pics/     :
 
 mobile:
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 1.png)
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 2.png)
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 3.png)
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 4.png)
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 5.png)
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 6.png)
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 7.png)
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 8.png)
-![Image description](/static/media/images/readme_pics/iPhone XR-XS Max-11 – 9.png)
+![Image description](/workspace/eddiewebsite2020/static/media/images/readme_pics/iPhone XR-XS Max-11 – 1.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/iPhone XR-XS Max-11 – 2.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/iPhone XR-XS Max-11 – 3.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/iPhone XR-XS Max-11 – 4.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/iPhone XR-XS Max-11 – 5.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/iPhone XR-XS Max-11 – 6.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/iPhone XR-XS Max-11 – 7.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/iPhone XR-XS Max-11 – 8.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/iPhone XR-XS Max-11 – 9.png)
 
 desktop:
-![Image description](/static/media/images/readme_pics/hi-fi wireframe.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 1.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 2.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 3.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 4.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 5.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 6.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 7.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 8.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 9.png)
-![Image description](/static/media/images/readme_pics/Web 1920 – 10.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/hi-fi wireframe.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 1.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 2.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 3.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 4.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 5.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 6.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 7.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 8.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 9.png)
+![Image description](/workspace/eddiewebsite2020//static/media/images/readme_pics/Web 1920 – 10.png)
 
 
 ## Features
