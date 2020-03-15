@@ -20,10 +20,12 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: black;
-    padding-bottom: 200px;
+    padding-bottom: 4em;
 }
 
-
+.wrapper{
+    margin-top: 2em;
+}
 
 .btn-primary {
     color: black;
