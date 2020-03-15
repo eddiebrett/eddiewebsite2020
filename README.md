@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/eddiebrett/eddiewebsite2020.svg?branch=master)](https://travis-ci.com/eddiebrett/eddiewebsite2020)
+
 # Eddie Brett WEBSITE
 
 I want to create a dynamics, clean, user friendly website where users can navigate through a webstore, blogs and music etc with minimal clicks. This is not a corparate website and i do not want it to feel like one, nor is it a sight that will reguarly needs up dating, with that in mind i dont want to other complicate information but i want it to be easy for adminastrative users to update or add information.
