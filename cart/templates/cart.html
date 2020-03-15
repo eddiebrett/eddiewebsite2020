@@ -34,10 +34,10 @@
 	</div>
 	{% endfor %}
 </div>
+
+<div>
+<p class="price-total">Total: £ {{ total }}</p> 
 <br/>
-<br/>
-<div class="row">
-	<p class="price-total">Total: £ {{ total }} --> </p>
 
 <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><i class="far fa-thumbs-up"></i>Go to
 	checkout...</a>
