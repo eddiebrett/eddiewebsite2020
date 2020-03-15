@@ -75,7 +75,7 @@ Using mobile first design was a great way to ensure that the site was asthetical
 
 I sent test emails to the email address provided in the contact page to ensure that that feature was working.
 
-
+I used TravisCI. Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub. www.travis-ci.com
 
 ## Deployment
 
