@@ -477,9 +477,6 @@ textarea{
     display: none;
   }
   .wrapper{
-    max-width: 960px;
-    margin: auto;
-    margin-top: 3em;
     margin-left: 2em;
     margin-right: 2em;
 }
