@@ -22,13 +22,11 @@
 
 					<div class="input-group">
 						<div class="input-group-addon">Qty  :</div>
-						<input name="quantity" type="number" min="0" max="999" class="form-control" placeholder="{{item.quantity}}">
+						<input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
 
-                    </div>
-               </br>
-				    <button type="submit" class="btn btn-primary"><i class="fas fa-edit"></i></span>Update</button>
-                
-                     </div>
+				    <button type="submit" class="btn btn-primary"><i class="fas fa-edit"></i>Update</button>
+                </div>
+                </div>
                 
 			</form>
 
@@ -41,7 +39,7 @@
 <div class="row">
 	<p class="price-total">Total: £ {{ total }} --> </p>
 
-<a href="{% url 'checkout' %}" class="btn btn-success" role="button"><i class="far fa-thumbs-up"></i></span>Go to
+<a href="{% url 'checkout' %}" class="btn btn-success" role="button"><i class="far fa-thumbs-up"></i>Go to
 	checkout...</a>
 </div>
 {% endblock %}

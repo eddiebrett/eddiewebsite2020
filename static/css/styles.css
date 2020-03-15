@@ -23,8 +23,10 @@ body {
     padding-bottom: 200px;
 }
 
-.hover:hover {
-    filter: invert(100%);
+
+
+.btn-primary {
+    color: black;
 }
 /*-------------------------------------- navbar --------------*/
 .nav-fill .nav-item {
@@ -496,17 +498,9 @@ textarea{
 }
 
 
-.fab:hover {
-     color: yellow;
-
-}
 
 a:hover{
     filter: invert(100%);
     text-decoration: none;
 }
 
-.col-md-4 {
-
-    padding-left: 30px;
-}
