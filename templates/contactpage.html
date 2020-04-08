@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block meta_description %} Contact Eddie Brett, get intouch with him. {% endblock %}
 {% block title %}CONTACT EDDIE{% endblock %}
 {% block content %}
@@ -24,6 +25,18 @@
         </form>
 
 	</div>
+    
+    <div class="row">
+	    <div class="col-6"><a href="https://www.spotlight.com/interactive/cv/1/M139427.html"
+			target="blank">
+			<img width="100%" src="{% static 'media/eddie-actor.jpg' %}" alt="Eddie Brett Spotlight link">
+                 </a></div>
+	    <div class="col-6"><a href="https://sohovoices.co.uk/artists/eddie-brett/"
+			target="blank">
+			<img width="100%" src="{% static 'media/eddie-voice.jpg' %}"  alt="Eddie Brett Sohovoices link">
+                </a></div>
+	
     </div>
+</div>
 
-	{% endblock%}
+{% endblock%}
