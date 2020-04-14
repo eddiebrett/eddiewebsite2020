@@ -209,9 +209,9 @@ footer {
 
 }
 
-input[type="text"] {
+/* input[type="text"] {
     width: 50%;
-}
+} */
 
 textarea {
     width: 100%;
@@ -459,9 +459,9 @@ left: 8px;
 
 
 /*----- formn -----*/
-input[type="text"] {
+/* input[type="text"] {
    border: 3px solid black;
-}
+} */
 
 textarea{ 
     border: 3px solid black;
